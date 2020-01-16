@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+.tooltip{
+position:relative;
+display:inline-block;
+border-bottom:1px dotted black;
+}
+.tooltip .tooltiptext{
+visibility:hidden;
+width:100px;
+background-color:red;
+color:#fff;
+text-align:center;
+border-radius:6px;
+position:absolute;
+margin-left:-60px;
+padding:5px 0;
+z-index: 1;
+bottom:100%;
+left:50%;
+opacity:0;
+transition:opacity 10s;
+}
+.tooltip:hover .tooltiptext{
+visibility:visible;
+opacity:1;
+}
+</style>
+</head>
+<body style="text-align:center">
+<h2>Top Tooltip Example</h2>
+<p>MOve</p>
+<div class="tooltip"><strong> welcome cognizant</strong>
+<span class="tooltiptext">Cognizant</span></div>
+</body>
+</html>

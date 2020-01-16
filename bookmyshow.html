@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<title>Book My Show</title>
+		<link rel="stylesheet" type="text/css" href="external.css">
+	</head>
+<body style="background-color:D4D4D3";>
+<header>
+<h2 style="color:white";>book<b style="color:red;">My</b>show 
+<input type="text" placeholder="Search...">
+<select>
+<option value="city">City</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="vizag">Vizag</option>
+</select>
+<select>
+<option value="language">Language</option>
+<option value="telugu">Telugu</option>
+<option value="tamil">Tamil</option>
+</select>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="file:///C:/Users/HP/Desktop/HTML/login.html" class="button">Login</a>
+</h2>
+<p style="background-color:gray;text-color:black";><a href="" class="button">Movies</a>&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="" class="button"> Events</a>&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="" class="button">Plays</a>&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="" class="button"> Sports</a>&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="" class="button"> Activities</a>&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="" class="button"> Monuments</a>&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="" class="button"> Fanhood</a>&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a href="" class="button">Buzz</a>
+<h5 align="right" style="background-color:gray;">Corporates&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspOffers&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspGift Cards</h5></p>
+</header>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img1.webp" style="width:100%">
+  <div class="text">Chhapaak</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img2.webp" style="width:100%">
+  <div class="text">Bombshell</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img3.jpg" style="width:100%">
+  <div class="text">Tanhaji</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" ></span> 
+  <span class="dot" ></span> 
+  <span class="dot" ></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+<h1>&nbspMovies&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp<a href="file:///C:/Users/HP/Desktop/HTML/nowshowing.html" class="button">NowShowing</a>&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp <a href="file:///C:/Users/HP/Desktop/HTML/comingsoon.html" class="button">Coming Soon</a>&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp <a href="file:///C:/Users/HP/Desktop/HTML/exclusive.html" class="button">Exclusive</a></h1>
+<div class="row">
+  <div class="column">
+	<h4>Sarileru Neekevvaru</h4>
+    <img src="ssnk.jpg" alt="Snow">
+  </div>
+  <div class="column">
+<h4>Chhampaak</h4>
+    <img src="champ.webp" alt="Forest">
+  </div>
+  <div class="column">
+<h4>Ala Vaikunthapurramuloo</h4>
+    <img src="ala.jpg" alt="Mountains">
+  </div>
+<div class="column">
+<h4>Darbar</h4>
+    <img src="dar.jpg" alt="Mountains">
+  </div>
+<div>
+<h1 align="left">Categories</h1>
+<form action="https://in.bookmyshow.com/kochi/events?collections=music-shows%3Aconcerts" method="get">
+  <input type="checkbox" name="concerts" value="con"> Concerts<br>
+  <input type="checkbox" name="music" value="festivals" >Music Festivals<br>
+  <input type="submit" value="Submit">
+ </form>
+</div>
+<div>
+<h1 align="left">Date</h1>
+<form action="https://in.bookmyshow.com/kochi/events?dayGroup=Weekend" method="get">
+  <input type="checkbox" name="to" value="day"> Today<br>
+  <input type="checkbox" name="tomo" value="rrow" >Tommorrow<br>
+  <input type="checkbox" name="week" value="end" >Weekend<br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
